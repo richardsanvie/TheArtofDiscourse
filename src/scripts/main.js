@@ -20,5 +20,9 @@ const contadorTempo = setInterval(function () {
 
     document.getElementById('contador').innerHTML = `${diaEvento}d ${horaEvento}h ${minutoEvento}m ${segundoEvento}s`;
 
+    if(DistanceEvent < 0) {
+        clearInterval(contadorTempo);
+        document.getElementById('contador').innerHTML = 'Evento expirado';
+    }
 
-})
+}, 1000);

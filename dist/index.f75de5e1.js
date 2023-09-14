@@ -13,6 +13,10 @@ const contadorTempo = setInterval(function() {
     const minutoEvento = Math.floor(DistanceEvent % hora / minuto);
     const segundoEvento = Math.floor(DistanceEvent % minuto / 1000);
     document.getElementById("contador").innerHTML = `${diaEvento}d ${horaEvento}h ${minutoEvento}m ${segundoEvento}s`;
-});
+    if (DistanceEvent < 0) {
+        clearInterval(contadorTempo);
+        document.getElementById("contador").innerHTML = "Evento expirado";
+    }
+}, 1000);
 
 //# sourceMappingURL=index.f75de5e1.js.map
