@@ -127,12 +127,13 @@ body .containerRow #mid {
 }
 
 @media screen and (width <= 767px) {
-  body {
-    padding: 0 10px;
+  * {
+    margin: 0;
+    padding: 0;
   }
 
-  body .containerRow {
-    display: block;
+  body {
+    padding: 0 10px;
   }
 
   body .containerRow #mid {
@@ -140,8 +141,8 @@ body .containerRow #mid {
   }
 
   body .containerRow .containterIntern, body .containerRow #mid {
-    height: 100%;
     margin-bottom: 10px;
+    display: block;
   }
 
   body .containerRow .containterIntern .containerOne h1, body .containerRow #mid .containerOne h1 {
@@ -149,7 +150,8 @@ body .containerRow #mid {
   }
 
   body .containerRow .containterIntern .containerTwo .name, body .containerRow #mid .containerTwo .name {
-    font-size: 85px;
+    margin-bottom: 10px;
+    font-size: 45px;
   }
 }
 

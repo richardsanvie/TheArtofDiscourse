@@ -142,20 +142,29 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
     body {
         padding: 0 10px;
+        
         .containerRow {
-            display: block;
+            // display: block;
+            // margin-top: 155px;
 
             #mid{
                 margin: 0;
             }
 
             .containterIntern, #mid {
-                height: 100%;
                 margin-bottom: 10px;
+                display: block;
 
                 .containerOne {
+                    
                     h1 {
                         font-size: 32px;
                     }
@@ -163,7 +172,8 @@ body {
 
                 .containerTwo {
                     .name {
-                        font-size: 85px;
+                        font-size: 45px;
+                        margin-bottom: 10px;
                     }
                 }
             }
