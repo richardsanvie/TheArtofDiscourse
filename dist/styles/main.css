@@ -154,7 +154,7 @@ body .containerRow #mid {
     font-size: 25px;
   }
 
-  body .containerRow .containterIntern .containerTwo p, body .containerRow #mid .containerTwo p {
+  body .containerRow .containterIntern .containerTwo p, body .containerRow #mid .containerTwo p, body .containerRow .containterIntern .containerThree p, body .containerRow #mid .containerThree p {
     font-size: 12px;
   }
 }
