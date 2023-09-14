@@ -1,0 +1,173 @@
+@use 'textSetup.scss';
+@use 'colors.scss';
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    background-color: colors.$white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    background-color: colors.$bg;
+
+    .containerRow {
+        display: flex;
+
+        .containterIntern {
+            // background-color: colors.$bisque;
+            height: 500px;
+            padding: 25px;
+            align-items: center;
+            display: flex;
+            border-radius: 15px;
+            background-color: colors.$white;
+            border: 1px solid colors.$border;
+
+            .containerOne {
+                h1 {
+                    font-size: 55px;
+                    text-transform: uppercase;
+                    @extend .hSetupText;
+                    font-weight: 900;
+
+                }
+
+                span {
+                    text-transform: uppercase
+                }
+
+                p {
+                    @extend .pSetupText;
+                    font-size: 10px;
+                    margin-top: 10px;
+
+                }
+            }
+
+            .containerTwo {
+                justify-content: space-between;
+                display: flex;
+                flex-direction: column;
+                height: 90%;
+
+                .name {
+                    font-size: 150px;
+                    text-transform: uppercase;
+                    font-weight: bolder;
+                    @extend .hSetupText;
+
+                }
+
+                p {
+                    margin-bottom: 8px;
+                    @extend .pSetupText;
+
+                }
+
+                .confirmed {
+                    display: flex;
+                    justify-content: space-between;
+
+                    a {
+                        background-color: colors.$bisque;
+                        padding: 15px;
+                        display: block;
+                        width: 255px;
+                        border-radius: 10px;
+                        text-decoration: none;
+                        @extend .hSetupText;
+
+                        &:hover {
+                            opacity: 0.9;
+                        }
+                    }
+                }
+
+            }
+
+            .containerThree {
+                @extend .pSetupText;
+                p {
+                    margin-bottom: 8px;
+                    @extend .pSetupText;
+
+                }
+            }
+
+        }
+
+        #mid {
+            margin: 0 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        padding: 0 10px;
+        .containerRow {
+            display: block;
+
+            #mid{
+                margin: 0;
+            }
+
+            .containterIntern, #mid {
+                height: 100%;
+                margin-bottom: 10px;
+
+                .containerOne {
+                    h1 {
+                        font-size: 32px;
+                    }
+                }
+
+                .containerTwo {
+                    .name {
+                        font-size: 85px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        padding: 0 10px;
+        .containerRow {
+            display: block;
+
+            #mid{
+                margin: 0;
+            }
+
+            .containterIntern, #mid {
+                height: 100%;
+                margin-bottom: 10px;
+
+                .containerOne {
+                    h1 {
+                        font-size: 32px;
+                    }
+                }
+
+                .containerTwo {
+                    .name {
+                        font-size: 85px;
+                    }
+                }
+            }
+        }
+
+    }
+}
