@@ -146,12 +146,16 @@ body .containerRow #mid {
   }
 
   body .containerRow .containterIntern .containerOne h1, body .containerRow #mid .containerOne h1 {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   body .containerRow .containterIntern .containerTwo .name, body .containerRow #mid .containerTwo .name {
     margin-bottom: 10px;
-    font-size: 45px;
+    font-size: 25px;
+  }
+
+  body .containerRow .containterIntern .containerTwo p, body .containerRow #mid .containerTwo p {
+    font-size: 12px;
   }
 }
 
